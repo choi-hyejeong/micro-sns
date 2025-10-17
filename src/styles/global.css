@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+/* 공통 레이아웃 */
+.page-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+/* Header */
+.header {
+    background-color: #222;
+    color: white;
+    padding: 12px 0;
+}
+.header-inner {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+/* Create Form */
+.create-form {
+    display: flex;
+    flex-direction: column;
+}
+.create-form textarea {
+    resize: none;
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.create-form button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.create-form button:hover {
+    background-color: #0056b3;
+}
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav {
+        margin-top: 10px;
+    }
+    .page-title {
+        font-size: 1.3rem;
+    }
+    .create-form textarea {
+        height: 100px;
+    }
+}
+@media (max-width: 480px) {
+    .header-inner {
+        width: 95%;
+    }
+    .logo {
+        font-size: 1.1rem;
+    }
+    .create-form button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

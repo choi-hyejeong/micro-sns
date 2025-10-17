@@ -1,0 +1,30 @@
+/* 전체 공통 배경 */
+.skeleton {
+    position: relative;
+    overflow: hidden;
+    background: #e0e0e0;
+}
+/* 효과 */
+.skeleton.shimmer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    animation: shimmer 1.6s infinite;
+}
+@keyframes shimmer {
+    0% {
+      left: -150px;
+    }
+    100% {
+      left: 100%;
+    }
+}
