@@ -38,7 +38,7 @@ yarn start
 
 #### 3\. 접속
 
-`https://micro-sns.hyejeong.kr/` 또는 `http://localhost:3000` 으로 접속하여 확인합니다.
+`https://micro-sns.hyejeong.kr/` 또는 `http://localhost:3000` 으로 접속하여 확인할 수 있습니다.
 
 -----
 
